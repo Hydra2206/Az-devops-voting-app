@@ -1,3 +1,4 @@
+Motive of this project is to learn Azure Devops
 # Az-devops-voting-app
 Deploying a multi microservices voting application using Azure Devops
 
@@ -7,4 +8,6 @@ Implementation steps:
 3) Created 3 pipelines for 3 microservices - result, worker, vote
 4) created a self-hosted runner & configure it to run these pipelines
 5) created a container registry so that we can build & push images
-6) created a aks, installing argocd & configuring
+6) created a aks, installed argocd & configure it
+7) creating a personal access token for repo to load into argocd, bcoz our repo is private
+8) creating a script that will automatically update deployment.yaml for all 3 microservices with the new image, every time when pipeline triggers
