@@ -11,3 +11,10 @@ Implementation steps:
 6) created a aks, installed argocd & configure it
 7) creating a personal access token for repo to load into argocd, bcoz our repo is private
 8) creating a script that will automatically update deployment.yaml for all 3 microservices with the new image, every time when pipeline triggers
+
+
+challenges - whenever userscript is running in pipeline, after executing every line there is /r is added to the command bcoz of that command gets wrong & it won't get executed.
+            problem - windows CLRF type it is adding (/r/n) after every line of script
+            solution - copy my code to vs & in bottom right i can change type from CLRF -> LF & use that script only
+
+chanlleges - ImagePullError
